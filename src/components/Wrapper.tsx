@@ -17,10 +17,10 @@ const Wrapper = ({ children }: Props) => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="flex flex-col md:mx-20 lg:mx-72">
+    <div className="flex flex-col mx-auto max-w-3xl ">
       <div className="mt-10">
         <div className="px-5">
-          <nav className="flex items-center justify-between w-full relative max-w-2xl ">
+          <nav className="flex items-center justify-between w-full relative max-w-3xl ">
             <div className="ml-[-0.60rem]">
               <NavItem href="/" text="Home" />
               <NavItem href="/about" text="About" />
