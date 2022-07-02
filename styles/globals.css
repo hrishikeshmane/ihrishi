@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border p-0 m-0;
+}
+
+html,
+body {
+  min-width: 360px;
+  font-family: "Barlow";
+  scroll-behavior: smooth;
+}
+
+::selection {
+  @apply text-white bg-teal-500;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500;
+}
