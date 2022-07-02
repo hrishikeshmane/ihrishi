@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border p-0 m-0;
+}
+
+html,
+body {
+  min-width: 360px;
+  /* font-family: "Barlow"; */
+  scroll-behavior: smooth;
+}
+
+::selection {
+  @apply text-white bg-teal-500;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.footer-links {
+  @apply my-2 text-lg text-gray-500 transition-colors duration-300 cursor-pointer w-fit hover:text-black dark:hover:text-white;
+}
+
+.text {
+  @apply prose text-gray-600 dark:text-gray-400 md:prose-lg lg:prose-xl dark:prose-invert prose-a:no-underline prose-a:font-medium hover:prose-a:underline hover:prose-a:underline-offset-2 hover:prose-a:transition-all hover:prose-a:duration-300;
+}
+
+.stats-styles {
+  @apply transition-colors duration-200 border border-gray-200 bg-gray-50 hover:bg-gray-200 dark:bg-zinc-900 dark:border-zinc-700 dark:hover:bg-zinc-800;
+}
