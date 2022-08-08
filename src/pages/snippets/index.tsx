@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import FunctionCard from "../../components/FunctionCard";
 import Wrapper from "../../components/Wrapper";
 
