@@ -23,9 +23,9 @@ const BlogPostCard = (props: Props) => {
   const { isLoading, isError, data, error } = useQuery(
     ["languages"],
     () => getLanguages(repo),
-    {
-      initialData: props.posts,
-    }
+    // {
+    //   initialData: props.posts,
+    // }
   );
 
   return (
