@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import FunctionCard from "../../components/FunctionCard";
 import Wrapper from "../../components/Wrapper";
 
@@ -68,8 +67,8 @@ export default function Snippets() {
         Code Snippets
       </h1>
       <p className="mb-4 text-gray-600 dark:text-gray-400">
-        These are a collection of code snippets I've used in the past and seem
-        to use them often.
+        These are a collection of code snippets I&apos;ve used in the past and
+        seem to use them often.
       </p>
       <div className="grid w-full grid-cols-1 gap-4 my-2 mt-4 sm:grid-cols-2">
         {snippets.map((snippet) => (
