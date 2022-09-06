@@ -2,8 +2,8 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import { useState } from "react";
 import Wrapper from "../../components/Wrapper";
-import snippets from "./data";
 import Gist from "super-react-gist";
+import { snippets } from "./";
 
 export default function SnippetsPage() {
   const [snippet, setSnippet] = useState(snippets[0]);

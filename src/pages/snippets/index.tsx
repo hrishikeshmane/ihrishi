@@ -1,6 +1,16 @@
 import FunctionCard from "../../components/FunctionCard";
 import Wrapper from "../../components/Wrapper";
-import snippets from "./data";
+
+export const snippets = [
+  {
+    key: "1",
+    title: "useDebounce()",
+    slug: "useDebounce",
+    gist: "https://gist.github.com/hrishikeshmane/de493e7678647d737e2c38315f1ad0cf",
+    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
+    description: "Debounce hook for React.",
+  },
+];
 
 export default function Snippets() {
   return (
