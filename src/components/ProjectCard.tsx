@@ -1,23 +1,45 @@
+import axios from "axios";
+import { useQuery } from "react-query";
+
 type Props = {
-  href: string;
-  length: string;
-  title: string;
+  repo: string;
   index: string;
-  subtitle: string;
 };
 
-export default function ProjectCard({
-  href,
-  length,
-  title,
-  index,
-  subtitle,
-}: Props) {
+const getRepo = async (repo: string) => {
+  const res = await axios.get(
+    `https://api.github.com/repos/hrishikeshmane/${repo}`
+  );
+  return res.data;
+};
+
+const getLanguages = async (repo: string) => {
+  const res = await axios.get(
+    `https://api.github.com/repos/hrishikeshmane/${repo}/languages`
+  );
+  return res.data;
+};
+
+export default function ProjectCard({ repo, index }: Props) {
+  const {
+    isLoading: isRepoLoading,
+    isError: isRepoError,
+    data: repoData,
+    error: repoError,
+  } = useQuery(["repo", repo], () => getRepo(repo));
+
+  const {
+    isLoading: isLangLoading,
+    isError: isLangError,
+    data: langData,
+    error: langError,
+  } = useQuery(["languages", repo], () => getLanguages(repo));
+
   return (
     <a
       className="w-full"
-      href={href}
-      aria-label={title}
+      href={repoData?.homepage}
+      aria-label={repo}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -29,17 +51,19 @@ export default function ProjectCard({
             </div>
             <div className="flex flex-col">
               <h4 className="text-lg font-medium w-full text-gray-800 dark:text-gray-100">
-                {title}
+                {repo}
               </h4>
-              <h4 className="text-sm font-medium w-full text-gray-600 dark:text-gray-400">
-                {subtitle}
+              <h4 className="text-xs font-medium w-full text-gray-600 dark:text-gray-400">
+                {isLangLoading && <p>Loading..</p>}
+                {langData && Object.keys(langData).toLocaleString()}
               </h4>
+              <h5 className="text-sm font-medium w-full text-gray-600 dark:text-gray-500">
+                {isLangLoading && <p>Loading..</p>}
+                {repoData?.description}
+              </h5>
             </div>
           </div>
           <div className="flex items-center mt-2 sm:mt-0 w-full sm:w-auto justify-between">
-            <p className="text-gray-500 dark:text-gray-400 text-left sm:text-right w-32 md:mb-0 mr-2 ml-10 sm:ml-0">
-              {length}
-            </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4 text-gray-500 dark:text-gray-100"

@@ -1,64 +1,6 @@
 import FunctionCard from "../../components/FunctionCard";
 import Wrapper from "../../components/Wrapper";
-
-const snippets = [
-  {
-    key: "1",
-    title: "Hook",
-    slug: "useHook",
-    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
-    description: "hello world",
-  },
-  {
-    key: "2",
-    title: "Hook2",
-    slug: "useHook2",
-    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
-    description: "hello world2",
-  },
-  {
-    key: "3",
-    title: "Hook",
-    slug: "useHook",
-    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
-    description: "hello world",
-  },
-  {
-    key: "4",
-    title: "Hook2",
-    slug: "useHook2",
-    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
-    description: "hello world2",
-  },
-  {
-    key: "5",
-    title: "Hook",
-    slug: "useHook",
-    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
-    description: "hello world",
-  },
-  {
-    key: "6",
-    title: "Hook2",
-    slug: "useHook2",
-    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
-    description: "hello world2",
-  },
-  {
-    key: "7",
-    title: "Hook",
-    slug: "useHook",
-    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
-    description: "hello world",
-  },
-  {
-    key: "8",
-    title: "Hook2",
-    slug: "useHook2",
-    logo: "https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png",
-    description: "hello world2",
-  },
-];
+import snippets from "./data";
 
 export default function Snippets() {
   return (

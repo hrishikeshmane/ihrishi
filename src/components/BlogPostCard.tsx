@@ -1,8 +1,7 @@
 import React from "react";
 import cn from "classnames";
-import { dehydrate, QueryClient, useQuery, useQueryClient } from "react-query";
+import { useQuery } from "react-query";
 import axios from "axios";
-import { GetStaticProps } from "next";
 
 type Props = {
   title: string;
@@ -20,12 +19,8 @@ const getLanguages = async (repo: string) => {
 
 const BlogPostCard = (props: Props) => {
   const { title, gradient, repo, link } = props;
-  const { isLoading, isError, data, error } = useQuery(
-    ["languages"],
-    () => getLanguages(repo),
-    // {
-    //   initialData: props.posts,
-    // }
+  const { isLoading, isError, data, error } = useQuery(["languages"], () =>
+    getLanguages(repo)
   );
 
   return (
@@ -47,8 +42,6 @@ const BlogPostCard = (props: Props) => {
         </div>
         <small>{repo}</small>
         <div className="flex items-center text-gray-800 dark:text-gray-200 capsize">
-          {/* {isError && <p>Error</p>} */}
-          {/* {data && Object.keys(data)} */}
           <span className="text-xs text-gray-400 align-baseline capsize">
             {isLoading && <p>Loading..</p>}
             {data && Object.keys(data).toLocaleString()}
