@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
               Self taught Fullstack Engineer, passionate about Web development,
-              Typescript, and React / Next.js.
+              Javscript / Typescript, and React / Next.js.
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
