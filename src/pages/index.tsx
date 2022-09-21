@@ -68,7 +68,7 @@ export default function Home(): JSX.Element {
             "from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
           )}
         >
-          <h2 className="text-2xl my-3">Comming soon</h2>
+          <h2 className="text-2xl my-3">Coming soon</h2>
         </div>
         {/* <div className="flex gap-6 flex-col md:flex-row">
           <BlogPostCard
