@@ -40,8 +40,8 @@ export default function Home(): JSX.Element {
               Software Engineer
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Self taught Fullstack Engineer, passionate about Web development,
-              Javscript / Typescript, and React / Next.js.
+              Master&apos;s student and software developer, trying to master the
+              art of the Web. React, and Typescript are my jam!
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -60,36 +60,23 @@ export default function Home(): JSX.Element {
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
           Featured Blogs
         </h3>
-        <div
-          className={cn(
-            "flex justify-center",
-            "transform hover:scale-[1.01] transition-all",
-            "rounded-xl w-full bg-gradient-to-r p-1",
-            "from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-          )}
-        >
-          <h2 className="text-2xl my-3">Coming soon</h2>
-        </div>
-        {/* <div className="flex gap-6 flex-col md:flex-row">
+        <div className="flex gap-6 flex-col md:flex-row">
           <BlogPostCard
-            title="Video Library App"
-            repo="netflix-clone-neog"
-            link="http://netflix-clone-neog.vercel.app/"
-            gradient="from-[#D8B4FE] to-[#818CF8]"
-          />
-          <BlogPostCard
-            title="Pomodoro App"
-            repo="pomodoro-app-neog"
-            link="https://pomodoro-app-5cc39.web.app/"
+            title="⚛ API calls made easy- React Query!"
+            link="http://localhost:3000/blog/api-calls-made-easy"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
           />
           <BlogPostCard
-            title="E-commerce App"
-            repo="amzn-clone-react-neog"
-            link="http://amzn-clone-react-neog.vercel.app/"
+            title="🚀 Ship your app ASAP with Vercel"
+            link="http://localhost:3000/blog/ship-your-app-asap"
+            gradient="from-[#D8B4FE] to-[#818CF8]"
+          />
+          <BlogPostCard
+            title="👋 Hello Next.js"
+            link="http://localhost:3000/blog/hello-next-js"
             gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
           />
-        </div> */}
+        </div>
 
         <section>
           <Link href="/blog">
