@@ -63,17 +63,17 @@ export default function Home(): JSX.Element {
         <div className="flex gap-6 flex-col md:flex-row">
           <BlogPostCard
             title="⚛ API calls made easy- React Query!"
-            link="http://localhost:3000/blog/api-calls-made-easy"
+            link="http://ihrishi.vercel.app/blog/api-calls-made-easy"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
           />
           <BlogPostCard
             title="🚀 Ship your app ASAP with Vercel"
-            link="http://localhost:3000/blog/ship-your-app-asap"
+            link="http://ihrishi.vercel.app/blog/ship-your-app-asap"
             gradient="from-[#D8B4FE] to-[#818CF8]"
           />
           <BlogPostCard
             title="👋 Hello Next.js"
-            link="http://localhost:3000/blog/hello-next-js"
+            link="http://ihrishi.vercel.app/blog/hello-next-js"
             gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
           />
         </div>
