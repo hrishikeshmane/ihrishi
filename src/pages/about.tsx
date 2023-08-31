@@ -18,33 +18,48 @@ type IEducation = {
 };
 
 const workExp: IWorkExp[] = [
+ {
+    position: "Software Developer Engineer Intern",
+    company: "Amazon Web Services (AWS)",
+    duration: "May 2023 - August 2023",
+    location: "Cupertino, CA",
+    description: [
+      "Led the successful decoupling of a service from a tightly coupled monolith system in Java, enabling the transition toward a robust microservice architecture. Resulted in increased system availability and improved scalability.",
+      "Spearheaded the designing and development of a highly efficient service, replacing the existing search platform with Elastic search technology. Implemented a seamless migration process, enhancing search functionality, and improving availability to 99% across 50+ regions in AWS network.",
+      "Added Metrix, logs, and Alarms to mitigate and troubleshoot Dynamo DB and web services using AWS Cloudwatch, resulted in 50% less customer tickets and identify anomalies preemptively in pre production regions.",
+      "Enforced type safety across microservices REST API via Smithy and code generation, reducing bugs by 15%.",
+      "Introduced robust authorization and throttling based on service principals and service level agreements, elevating security in a multi-tenant and multi-region application for more than 1500 customers.",
+      "Elevated onboarding docs and team wiki, improving accessibility and knowledge sharing. Enhanced new hire experiences and facilitated efficient information retrieval for team members.",
+    ],
+  },
   {
-    position: "Software Developer",
+    position: "Software Developer Frontend",
     company: "Iauro System",
     duration: "December 2021 - July 2022",
     location: "Pune, IN",
     description: [
-      "Led a team of 5 to design and develop an enterprise low code platform estimated to save over 20% of man-hours.",
-      "Mentored 2 interns on the team in expanding Javascript, Typescript, and React skillset.",
-      "Leveraged Webpack Module Federation to enable Micro Frontend architecture.",
-      "Improved team productivity by 10% by writing a boilerplate code generator using Nx plugins.",
-      "Built an abstracted component library on top of Material UI React to increase code reusability throughout the organization.",
-      "Introduced Storybook to build, test, and track use cases of UI components in isolation.",
-      "Collaborated with Project manager, DevOps, and Backend teams to build and deploy single-page web applications.",
+      "Directed a 5-member engineering team in conceiving and crafting an enterprise-grade low-code platform, projected to slash man-hours by over 60%.",
+      "Mentored and guided 2 interns, expanding their proficiency in Javascript, Typescript, and React, fostering skill development within the team.",
+      "Employed webpack Module Federation for Micro Frontend, enhancing modularity and scalability by 33%.",
+      "Pioneered the implementation of a mono repository structure using Nx, enhancing workflow methodologies across the organization.",
+      "Realized a 30% boost in team productivity through the development of a boilerplate code generator using Nx plugins.",
+      "Constructed an abstracted component library atop Material UI React, amplifying code reusability by 85% across the organization.",
+      "Introduced Storybook as a tool to autonomously build, test, and monitor usage scenarios for UI components in isolation.",
+      "Orchestrated collaborative efforts with Project Management, DevOps, and Backend teams for the creation and deployment of single-page web applications."
     ],
   },
   {
-    position: "Technical Support Engineer- End User Computing",
+    position: "Software Engineer End User Computing",
     company: "VMware",
     duration: "June 2020 - December 2021",
     location: "Bangalore, IN",
     description: [
-      "Deep and fundamental understanding of Cloud computing, Desktop and Application virtualization, and Datacenter management",
-      "Gained proficiency over VMware Products- VMware vSphere, VMware Horizon, and Unified Access Gateway along with Microsoft services for virtualization and Infrastructure management.",
-      "Analyzed Networks, VMs, Gateways, Load Balancer, and Connection Server logs to derive a plan of action to mitigate and solve critical production issues.",
-      "Diagnostic techniques to identify production environment problems, investigate the cause, and draft solutions to correct failures.",
+      "Implemented comprehensive Integration and Unit test strategies, elevating branch coverage from 55% to 90%",
+      "Designed a tool to identify analogous customer tickets and internal knowledge base articles, leveraging customer symptoms, expediting  resolution of repetitive tickets by 80%. ",
+      "Conducted in-depth analysis of connection server and security server logs, proficiently identifying and rectifying virtual machine connection anomalies.",
+      "Demonstrated expertise in deploying and managing data center and cloud infrastructure, leveraging VMware Horizon and Vsphere. Successfully resolving complexities related to Access Gateways and Identity Access Manager, guaranteeing the establishment of robust secure connections.",
       "Collaborated with Staff Engineers, Account Managers, and customers to solve production issues.",
-      "Documented problems, workaround, solution implementation, RCA, and bug reports.",
+      "Achieved an unbroken six-month track record of maintaining 100% customer satisfaction by effectively addressing and resolving issues in a timely and thorough manner.",
     ],
   },
   {
