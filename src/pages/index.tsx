@@ -13,7 +13,7 @@ export default function Home(): JSX.Element {
         <title>Hrishikesh Mane | Home</title>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="Hrishikesh Mane | Home" />
-        {/* <meta
+        <meta
           property="og:image"
           content="https://avatars.githubusercontent.com/hrishikeshmane"
         />
@@ -21,8 +21,8 @@ export default function Home(): JSX.Element {
           name="og:description"
           content="Hrishikesh Mane portfolio website"
         />
-        <meta property="og:url" content="https://ihrishi.vercel.app/" /> */}
-        {/* <meta property="og:type" content="website" /> */}
+        <meta property="og:url" content="https://ihrishi.vercel.app/" />
+        <meta property="og:type" content="website" />
       </Head>
 
       <Wrapper>
