@@ -17,9 +17,17 @@ export default function Home(): JSX.Element {
           name="description"
           content="Hrishikesh Mane's portfolio website"
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ihrishi.vercel.app/" />
         <meta property="og:title" content="Hrishikesh Mane | Home" />
+        <meta
+          property="og:image"
+          content="https://avatars.githubusercontent.com/hrishikeshmane"
+        />
+        <meta
+          property="og:description"
+          content="Hrishikesh Mane Portfolio website"
+        />
+        <meta property="og:url" content="https://ihrishi.vercel.app/" />
+        <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="Hrishikesh Mane's portfolio website"
