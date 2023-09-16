@@ -29,10 +29,6 @@ export default function Home(): JSX.Element {
         <meta property="og:url" content="https://ihrishi.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta
-          property="og:description"
-          content="Hrishikesh Mane's portfolio website"
-        />
-        <meta
           property="og:image"
           content="https://avatars.githubusercontent.com/hrishikeshmane"
         />
