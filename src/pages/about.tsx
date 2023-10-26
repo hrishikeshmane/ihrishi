@@ -18,7 +18,7 @@ type IEducation = {
 };
 
 const workExp: IWorkExp[] = [
- {
+  {
     position: "Software Developer Engineer Intern",
     company: "Amazon Web Services (AWS)",
     duration: "May 2023 - August 2023",
@@ -45,7 +45,7 @@ const workExp: IWorkExp[] = [
       "Realized a 30% boost in team productivity through the development of a boilerplate code generator using Nx plugins.",
       "Constructed an abstracted component library atop Material UI React, amplifying code reusability by 85% across the organization.",
       "Introduced Storybook as a tool to autonomously build, test, and monitor usage scenarios for UI components in isolation.",
-      "Orchestrated collaborative efforts with Project Management, DevOps, and Backend teams for the creation and deployment of single-page web applications."
+      "Orchestrated collaborative efforts with Project Management, DevOps, and Backend teams for the creation and deployment of single-page web applications.",
     ],
   },
   {
@@ -138,7 +138,36 @@ export default function About() {
 
         <div className="my-8 w-full">
           <h2>Professional Experience</h2>
-          <ol className="relative border-l border-gray-200 dark:border-gray-700">
+
+          <p>
+            I am currently pursuing a Master's degree in Computer Science at the
+            State University of New York at Binghamton, complementing my
+            extensive technological expertise. My professional journey has been
+            characterized by remarkable achievements, primarily showcased
+            through my roles at VMware, Iauro Systems, and Amazon Web Services
+            (AWS).
+          </p>
+          <p>
+            As a seasoned Software Engineer, I bring a wealth of experience in
+            developing and shipping products. Most recently at AWS, I led the
+            transformation from a monolithic application to a robust
+            microservices architecture across 50+ regions, fortifying end-to-end
+            type safety for a multi-tenant application at AWS Network
+            Availability. At Iauro Systems, I spearheaded the development of a
+            low-code platform and automation tools, resulting in a 60% reduction
+            in man-hours across projects. During my time at VMware, I expertly
+            managed comprehensive on-premise enterprise private and hybrid
+            clouds, demonstrating a customer-obsessed ethos during the
+            challenging pandemic period.
+          </p>
+          <p>
+            Throughout my journey in the tech industry, I've demonstrated a
+            steadfast commitment to excellence and a relentless drive to deliver
+            impactful solutions. I'm at the forefront of transformative change,
+            fostering collaborative opportunities that drive innovation.
+          </p>
+
+          <ol className="relative border-l border-gray-200 dark:border-gray-700 hidden">
             {workExp.map(
               ({ position, company, duration, description, location }) => (
                 <li key={nanoid()} className="mb-10 ml-4">
@@ -153,9 +182,9 @@ export default function About() {
                   </div>
                   <div className="flex my-0">
                     <i>{position}</i>
-                    <time className="ml-auto mr-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    {/* <time className="ml-auto mr-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                       {duration}
-                    </time>
+                    </time> */}
                   </div>
                   <div className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                     <ul>
@@ -166,24 +195,6 @@ export default function About() {
                       ))}
                     </ul>
                   </div>
-                  {/* <a
-                  href="#"
-                  className="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                >
-                  Learn more{" "}
-                  <svg
-                    className="ml-2 w-3 h-3"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </a> */}
                 </li>
               )
             )}
@@ -206,9 +217,9 @@ export default function About() {
                 </div>
                 <p className="flex my-0">
                   <i>{course}</i>
-                  <time className="ml-auto mr-2 mt-0 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  {/* <time className="ml-auto mr-2 mt-0 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                     {duration}
-                  </time>
+                  </time> */}
                 </p>
               </li>
             ))}

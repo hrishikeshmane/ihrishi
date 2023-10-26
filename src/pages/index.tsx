@@ -35,8 +35,8 @@ export default function Home(): JSX.Element {
               Software Engineer
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Master&apos;s student and software developer, trying to master the
-              art of the Web. React, and Typescript are my jam!
+              Software developer, trying to master the art of the Web. React,
+              and Typescript are my jam!
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
