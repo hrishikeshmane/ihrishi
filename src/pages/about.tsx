@@ -140,12 +140,12 @@ export default function About() {
           <h2>Professional Experience</h2>
 
           <p>
-            I am currently pursuing a Master's degree in Computer Science at the
-            State University of New York at Binghamton, complementing my
-            extensive technological expertise. My professional journey has been
-            characterized by remarkable achievements, primarily showcased
-            through my roles at VMware, Iauro Systems, and Amazon Web Services
-            (AWS).
+            I am a Software Engineer with a Master&apos;s degree in Computer
+            Science from the State University of New York at Binghamton,
+            complementing my extensive technological expertise. My professional
+            journey has been characterized by remarkable achievements, primarily
+            showcased through my roles at VMware, Iauro Systems, and Amazon Web
+            Services (AWS).
           </p>
           <p>
             As a seasoned Software Engineer, I bring a wealth of experience in
@@ -161,10 +161,10 @@ export default function About() {
             challenging pandemic period.
           </p>
           <p>
-            Throughout my journey in the tech industry, I've demonstrated a
+            Throughout my journey in the tech industry, I&apos;ve demonstrated a
             steadfast commitment to excellence and a relentless drive to deliver
-            impactful solutions. I'm at the forefront of transformative change,
-            fostering collaborative opportunities that drive innovation.
+            impactful solutions. I&apos;m at the forefront of transformative
+            change, fostering collaborative opportunities that drive innovation.
           </p>
 
           <ol className="relative border-l border-gray-200 dark:border-gray-700 hidden">
